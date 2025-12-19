@@ -1,4 +1,4 @@
-/* "GLOBAL"-nav */
+/* "GLOBAL"-nav */  
 body {
     background-color: rgb(191, 208, 239);
 }
@@ -19,10 +19,10 @@ body {
 .global_head h1 {
   background: linear-gradient(
     to right, 
-    red,
-    red 0%,
-    blue 100%,
-    blue
+    rgb(243, 243, 243),
+    rgb(252, 252, 252) 0%,
+    rgb(255, 0, 0) 100%,
+    rgb(255, 0, 0) 
   );
 }
   
@@ -82,3 +82,19 @@ body {
     margin-right: 90%;
 
 }
+/* ---- */
+
+/* Sections */
+#mainContent h1 {
+    background-color: rgb(238, 236, 101);
+    text-align: center;
+    border: black 2px solid;
+    border-radius: 8px;
+    justify-content: center;
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+/* Section END  */
+
+/* Comic Button  */
