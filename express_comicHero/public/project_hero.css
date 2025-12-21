@@ -1,0 +1,176 @@
+/* "GLOBAL"-nav */  
+body {
+    background-color: rgb(191, 208, 239);
+}
+
+/* header {
+    text-align: center;
+} */
+.global_head h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    padding: 5px;
+    margin: auto;
+    clear: both;
+}
+.global_head h1 {
+  background: linear-gradient(
+    to right, 
+    rgb(243, 243, 243),
+    rgb(252, 252, 252) 0%,
+    rgb(255, 0, 0) 100%,
+    rgb(255, 0, 0) 
+  );
+}
+  
+
+/* NAV */
+#nav_right {
+    float: right;
+}
+#global_head {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    padding: 5px;
+    margin: auto;
+    clear: both;
+}
+
+#global_nav {
+    color: lightblue;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: auto;
+    margin: auto;
+}
+
+#global_nav a {
+    color: inherit;
+    text-decoration: none;
+}
+#global_nav ul li a {
+    font-size: large;
+}
+#global_nav li {
+    display: inline-block;
+    position: relative;
+    
+}
+
+#global_nav li :hover {
+    display: block;
+    background-color: orange;
+    color: white;
+    padding: 0%;
+}
+
+#global_nav ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+/* Sidebar */
+#classFilter {
+    background-color: aliceblue;
+    border: black 2px solid;
+    margin-right: 90%;
+
+}
+/* ---- */
+
+/* Sections */
+#mainContent h1 {
+    background-color: rgb(238, 236, 101);
+    text-align: center;
+    border: black 2px solid;
+    border-radius: 8px;
+    justify-content: center;
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* .search_area {
+    text-align: center;
+    border: black 2px solid;
+    border-radius: 10%;
+} */
+.search_area {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+#search_field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(67, 245, 236);
+    border: #facc15 2px solid;
+    border-radius: 10px;
+    /* height: 10vh; */
+
+}
+#hero_Search {
+    width: 700px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #facc15;
+}
+/* Section END  */
+
+
+/* Comic Button  */
+
+/* CSS */
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
