@@ -1,5 +1,6 @@
 # Comics-Hero
 This is a repo for INST377 final project. A  website dealing with comics and superheros
+### link to video plz watch for grader
 # Title: Comic Heros
 
 # Description of your project
@@ -15,8 +16,10 @@ This is a repo for INST377 final project. A  website dealing with comics and sup
 - Nodemon:
 - Dotenv: npm install dotenv
 - Supabase: npm install @supabase/supabase-js
+- Nvm for wqindows: https://github.com/coreybutler/nvm-windows#readme
+
 ## How to run your application on a server
--  To Start: npm start
+-  To Start: Navigate to the express_comicHero folder and run. npm start
 ## How to run any tests you have written for your software
 - TO show all the heros that are store in the supabased DB
     - comment out the loadSavedHeroes(); in project_her.js
@@ -33,13 +36,16 @@ This is a repo for INST377 final project. A  website dealing with comics and sup
 - Issues with imgage rendering in the front page
 
 # Links to resources
+## Libraries
 - https://darkmodejs.learn.uno/
-- https://kenwheeler.github.io/slick/
+- https://swiperjs.com/get-started
 
+## CSS customs
 - https://emojipedia.org/bat
 - https://icons8.com/icon/61992/batman
 - https://getcssscan.com/css-buttons-examples 
 
+## Api id doc
 - https://superheroapi.com/ids.html
 
 
@@ -49,4 +55,4 @@ This is a repo for INST377 final project. A  website dealing with comics and sup
 
 - If you need the .env plz lmk because this messed up my whole plan
 
-- ggs im losign my mind, Render wont deploy my repo
+- ggs im losing my mind, Render wont deploy my repo

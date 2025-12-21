@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'))    //double underscore and lowercase public
 
 app.get('/', (req, res) => {
-    res.sendFile('public/project_home.html', { root:__dirname});   //Add in all web page
+    res.sendFile('public/project_home.html', { root:__dirname});   //Add in all web pages in public
 });
 //express setup end
 
@@ -50,6 +50,14 @@ app.get('/api/heroes/saved', async (req, res) => {   // GET FROM DB
     res.json(data);
 });
 
+app.get('/api/image-proxy', async (req, res) => {  //image load issues
+    const imageUrl = req.query.url;
+    const response = await fetch(imageUrl);
+    const buffer = await response.arrayBuffer();
+    res.set('Content-Type', response.headers.get('content-type'));
+    res.send(Buffer.from(buffer));
+});
+
 app.get('/api/heroes/:id', async (req, res) => {
     const id = req.params.id;
     const apikey = process.env.SuperHero_API_KEY;
@@ -61,13 +69,6 @@ app.get('/api/heroes/:id', async (req, res) => {
     res.json(data);
 });
 
-app.get('/api/image-proxy', async (req, res) => {  //image load issues
-    const imageUrl = req.query.url;
-    const response = await fetch(imageUrl);
-    const buffer = await response.arrayBuffer();
-    res.set('Content-Type', response.headers.get('content-type'));
-    res.send(Buffer.from(buffer));
-});
 
 //------------------------------------------------
 //DB Write to supabase
@@ -112,22 +113,19 @@ app.post(`/api/heroes/save`, async (req, res) => {            //SAVE TO DB
         image_url: image.url
     };
 
-    console.log('Prepared heroData:', heroData); //delte
+    console.log('Prepared heroData:', heroData); 
     
     const { data, error } = await supabase.from('super_heroDB').upsert([heroData]);
 
-    console.log('Supabase INSERT result:', { data, error }); //del
+    console.log('Supabase INSERT result:', { data, error }); 
 
     if (error) {
-        console.error('INSERT ERROR:', error); // ADD THIS LINE
+        console.error('INSERT ERROR:', error); 
         return res.status(500).json({ error: error.message });
     }
     
-    console.log('Success! Saved to DB'); // ADD THIS LINE
+    console.log('Success! Saved to DB'); 
     res.json({success: true, data});
-
-    // if (error) return res.status(500).json({ error: error.message });
-    // res.json({success: true, data});
 
 });
 
