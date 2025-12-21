@@ -43,3 +43,10 @@ This is a repo for INST377 final project. A  website dealing with comics and sup
 - https://superheroapi.com/ids.html
 
 
+# Real git issue
+- so i had stared out with base html css and js. I watched the professor video to set up express server.
+- time to deploy an di realised vercel doesnt support html
+
+- If you need the .env plz lmk because this messed up my whole plan
+
+- ggs im losign my mind, Render wont deploy my repo
